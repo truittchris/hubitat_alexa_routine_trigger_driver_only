@@ -1,37 +1,21 @@
 {
-  "packageName": "Hubitat Alexa Routine Trigger",
+  "packageName": "Hubitat Alexa Routine Trigger (Driver Only)",
   "author": "Chris Truitt",
   "version": "0.9.0",
   "minimumHEVersion": "2.1.9",
   "dateReleased": "2026-01-17",
-  "licenseFile": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/LICENSE",
-  "releaseNotes": "0.9.0: driver-only release (no Hubitat app required). MultiTrigger Controller creates and manages child triggers.",
-  "documentationLink": "https://github.com/truittchris/hubitat_alexa_routine_trigger#readme",
+  "licenseFile": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger_driver_only/main/LICENSE",
+  "releaseNotes": "Driver-only package (no app, no trigger groups).",
+  "documentationLink": "https://github.com/truittchris/hubitat_alexa_routine_trigger_driver_only#readme",
   "communityLink": "https://community.hubitat.com/",
   "drivers": [
     {
       "id": "8d06cad1-6e34-4b3c-94e8-2f575f6d5da7",
       "name": "Hubitat Alexa Routine Trigger - Virtual Contact Trigger",
       "namespace": "truittchris",
-      "location": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverVirtualContact.groovy",
+      "location": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger_driver_only/main/drivers/HubitatAlexaRoutineTriggerDriverVirtualContact.groovy",
       "required": true,
       "description": "Virtual contact sensor optimized for Alexa routines, with auto-reset and cooldown behavior."
-    },
-    {
-      "id": "6928e2ef-4605-4392-9677-fc30beb1a204",
-      "name": "Hubitat Alexa Routine Trigger - Child Contact",
-      "namespace": "truittchris",
-      "location": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverChildContact.groovy",
-      "required": true,
-      "description": "Alexa-facing contact trigger device. Typically created by the MultiTrigger Controller."
-    },
-    {
-      "id": "fc26f6d8-950e-4453-9c79-efbdf053193f",
-      "name": "Hubitat Alexa Routine Trigger - MultiTrigger Controller",
-      "namespace": "truittchris",
-      "location": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverMultiTriggerController.groovy",
-      "required": true,
-      "description": "Hubitat-facing controller switch that triggers a sequence of child contact triggers exposed to Alexa."
     }
   ]
 }
